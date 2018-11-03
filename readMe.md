@@ -16,8 +16,12 @@ https://coolors.co/011627-fdfffc-eb4511-2ec4b6-780116
 /* RGB */
 
 
-<link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
-or
+
+Fonts :
+ #title{
+font-family: 'Pattaya', sans-serif;
+
+}
 
 <style>
 @import url('https://fonts.googleapis.com/css?family=Oswald|Quattrocento');
