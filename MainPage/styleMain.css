@@ -6,10 +6,7 @@ body {
 
 #title{
   color: #fb8c00
-}
 
-#title{
-  margin-bottom: 80px;
 }
 
 input {
@@ -24,14 +21,15 @@ input {
 
 #title{
 font-family: 'Pattaya', sans-serif;
+margin-top: 100px;
 
 }
 
+#challengeSubmit{
+margin-top: 50px;
+}
 
-#iWant {
-   margin-bottom: 40px;
- }
-
- #instructions{
-   margin-bottom: 80px
- }
+#challengeInput{
+  margin-top: 100px;
+  display: inline-block;
+}

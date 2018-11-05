@@ -4,9 +4,9 @@ Be Better
 Deployed link
 
 Wireframes:
-https://wireframe.cc/rPHdig
-https://wireframe.cc/mC222P
-https://wireframe.cc/NenSM5
+https://wireframe.cc/rPHdig // Sign in page
+https://wireframe.cc/mC222P // What do you want to work on?
+https://wireframe.cc/NenSM5 // Main Page
 
 A style guide
 Color Scheme

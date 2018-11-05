@@ -2,23 +2,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 
-  document.getElementById("myBtn").addEventListener("click", function (){
-  
+
+  document.getElementById("submit").addEventListener("click", function(event){
+    // localStorage.setItem('name', JSON.stringify())
+    console.log(first_name.innerText)
+})
 
 
-
-  });
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
+})
