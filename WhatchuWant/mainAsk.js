@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 
 var challenge = ""
-
+var goal = 0
 
   document.getElementById("challenge").addEventListener("click", function(event) {
     challengeText.innerHTML = ""
@@ -11,15 +11,19 @@ var challenge = ""
       let random = Math.floor(Math.random() * Math.floor(max))
       if (random === 0) {
         challenge = "First Challenge"
+        goal = 350
         return challengeText.innerHTML = "Do fifty pushups a day for a week!"
       }
       if (random === 1) {
         challenge = "Second Challenge"
-        return challengeText.innerHTML = "Go for a half hour long run everyday for a week!"
+        goal = 7
+        return challengeText.innerHTML = "Go for a mile long run everyday for a week!"
       }
       if (random === 2) {
         challenge = "Third Challenge"
-        return challengeText.innerHTML = "Do fifty situps per day!"
+        goal = 700
+        return challengeText.innerHTML = "Do one hundred situps per day!"
+
       }
 
     }
@@ -30,7 +34,7 @@ var challenge = ""
 
     document.getElementById("challenge").addEventListener("click", function(event){
       localStorage.setItem('challenge', challenge)
-
+      localStorage.setItem('goal', JSON.stringify(goal))
     })
 
 

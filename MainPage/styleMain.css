@@ -5,8 +5,12 @@ body {
 }
 
 #title{
-  color: #fb8c00
+  color: #fb8c00;
+  margin-bottom: 80px;
+}
 
+#text_inline{
+  margin-top: 50;
 }
 
 input {
