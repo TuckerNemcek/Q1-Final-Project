@@ -3,10 +3,23 @@ document.addEventListener("DOMContentLoaded", function(event) {
   localStorage.getItem('challenge')
   let achievedGoals =  document.getElementById("text_inline").value
 
-
+  const body = document.querySelector("body")
   let name = localStorage.getItem('name')
   let goal = JSON.parse(localStorage.getItem('goal'))
 // goal sucessfully decrements when the event listener is put here
+let weekGoal = document.createElement("weekGoal")
+weekGoal.innerHTML = `<div id="weekGoal" class="center-align">
+only ${goal} left to go!
+</div>`
+submit.addEventListener("click", function(){
+  achievedGoals = goalInput.value
+  goal = goal - achievedGoals
+  weekGoal.innerHTML = `<div id="weekGoal" class="center-align">
+  only ${goal} left to go!
+  </div>`
+  console.log(achievedGoals)
+  console.log(goal)
+})
 
 
   if (localStorage.getItem('challenge') === 'First Challenge') {
@@ -26,25 +39,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
     text_inline.innerText = "I bet your tummy hurts!"
     chalAsk.innerText = "How many situps did you do today?"
   }
-let body = document.querySelector("body")
-  let weekGoal = document.createElement("weekGoal")
-  weekGoal.innerHTML = `<div id="weekGoal" class="center-align">
-    only ${goal} left to go!
-  </div>`
 
 body.appendChild(weekGoal)
 
-function chalSubmit (){
-  achievedGoals = text_inline.value
-}
-
-submit.addEventListener("click", function(){
-  achievedGoals = goalInput.value
-  goal = goal - achievedGoals
-console.log(achievedGoals)
-console.log(goal)
 
 
- })
+
+
 // DOMContentLoaded
 });
